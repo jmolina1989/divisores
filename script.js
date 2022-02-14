@@ -2,7 +2,7 @@ const divisor = () => {
     let numero = document.getElementById('numero').value;
     if (numero!="" && numero <= 100000000){
         if (numero==0){
-            document.getElementById('divisores').innerHTML = "El 0 tiene infinitos divisores exceptuando al mismo 0";
+            document.getElementById('divisores').innerHTML = "El 0 tiene infinito numero divisores exceptuando al mismo 0";
             document.getElementById('cantidad').innerHTML = "";
         }else{
             numero = parseInt(numero);
