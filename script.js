@@ -1,9 +1,11 @@
 const divisor = () => {
     let numero = document.getElementById('numero').value;
+    const resultado = document.getElementById('divisores');
+    const cantidad = document.getElementById('cantidad');
     if (numero!="" && numero <= 100000000){
         if (numero==0){
-            document.getElementById('divisores').innerHTML = "El 0 tiene infinito numero divisores exceptuando al mismo 0";
-            document.getElementById('cantidad').innerHTML = "";
+            resultado.innerHTML = "El numero 0 tiene divisores infinitos a excepción del mismo 0";
+            cantidad.innerHTML = "";
         }else{
             numero = parseInt(numero);
             const divisores = [];
@@ -14,11 +16,11 @@ const divisor = () => {
                     suma += 1;
                 }
             }
-            document.getElementById('divisores').innerHTML = `D<sub>${numero}</sub> = {${divisores.join(', ')}}`;
-            document.getElementById('cantidad').innerHTML = `El numero ${numero} tiene ${suma} divisores`;
+            resultado.innerHTML = `D<sub>${numero}</sub> = {${divisores.join(', ')}}`;
+            cantidad.innerHTML = `El numero ${numero} tiene ${suma} divisores`;
         }
     }else {
-        document.getElementById('divisores').innerHTML = "Debe escribir un numero entre 1 y 100.000.000";
-        document.getElementById('cantidad').innerHTML = "";
+        resultado.innerHTML = "Debe escribir un numero entre 1 y 100.000.000";
+        cantidad.innerHTML = "";
     }
 }
