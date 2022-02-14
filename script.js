@@ -14,7 +14,7 @@ const divisor = () => {
                     suma += 1;
                 }
             }
-            document.getElementById('divisores').innerHTML = `D<sub>${numero}</sub> = {${divisores}}`;
+            document.getElementById('divisores').innerHTML = `D<sub>${numero}</sub> = {${divisores.join(', ')}}`;
             document.getElementById('cantidad').innerHTML = `El numero ${numero} tiene ${suma} divisores`;
         }
     }else {
