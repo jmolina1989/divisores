@@ -2,6 +2,10 @@ h1 {
     text-align: center;
 }
 
+main {
+    margin: 50% 0%;
+}
+
 #container {
     display: flex;
     justify-content: center;
